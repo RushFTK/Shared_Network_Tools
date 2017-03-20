@@ -33,13 +33,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.导入IToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wifi_start = new System.Windows.Forms.Button();
-            this.wifi_ssid = new System.Windows.Forms.TextBox();
-            this.wifi_password = new System.Windows.Forms.TextBox();
             this.帮助HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.运行原理SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.关于AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wifi_start = new System.Windows.Forms.Button();
+            this.wifi_ssid = new System.Windows.Forms.TextBox();
+            this.wifi_password = new System.Windows.Forms.TextBox();
             this.button_ifpwhid = new System.Windows.Forms.Button();
             this.label_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,22 +67,6 @@
             this.导入IToolStripMenuItem.Name = "导入IToolStripMenuItem";
             resources.ApplyResources(this.导入IToolStripMenuItem, "导入IToolStripMenuItem");
             // 
-            // wifi_start
-            // 
-            resources.ApplyResources(this.wifi_start, "wifi_start");
-            this.wifi_start.Name = "wifi_start";
-            this.wifi_start.UseVisualStyleBackColor = true;
-            // 
-            // wifi_ssid
-            // 
-            resources.ApplyResources(this.wifi_ssid, "wifi_ssid");
-            this.wifi_ssid.Name = "wifi_ssid";
-            // 
-            // wifi_password
-            // 
-            resources.ApplyResources(this.wifi_password, "wifi_password");
-            this.wifi_password.Name = "wifi_password";
-            // 
             // 帮助HToolStripMenuItem
             // 
             this.帮助HToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -107,11 +91,28 @@
             this.关于AToolStripMenuItem.Name = "关于AToolStripMenuItem";
             resources.ApplyResources(this.关于AToolStripMenuItem, "关于AToolStripMenuItem");
             // 
+            // wifi_start
+            // 
+            resources.ApplyResources(this.wifi_start, "wifi_start");
+            this.wifi_start.Name = "wifi_start";
+            this.wifi_start.UseVisualStyleBackColor = true;
+            // 
+            // wifi_ssid
+            // 
+            resources.ApplyResources(this.wifi_ssid, "wifi_ssid");
+            this.wifi_ssid.Name = "wifi_ssid";
+            // 
+            // wifi_password
+            // 
+            resources.ApplyResources(this.wifi_password, "wifi_password");
+            this.wifi_password.Name = "wifi_password";
+            // 
             // button_ifpwhid
             // 
             resources.ApplyResources(this.button_ifpwhid, "button_ifpwhid");
             this.button_ifpwhid.Name = "button_ifpwhid";
             this.button_ifpwhid.UseVisualStyleBackColor = true;
+            this.button_ifpwhid.Click += new System.EventHandler(this.button_ifpwhid_Click);
             // 
             // label_name
             // 

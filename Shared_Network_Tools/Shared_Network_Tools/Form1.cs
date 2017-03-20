@@ -16,5 +16,10 @@ namespace Shared_Network_Tools
         {
             InitializeComponent();
         }
+
+        private void button_ifpwhid_Click(object sender, EventArgs e)
+        {
+            button_ifpwhid.Text = "隐";
+        }
     }
 }
