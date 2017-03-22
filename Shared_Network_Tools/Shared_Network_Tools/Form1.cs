@@ -19,7 +19,18 @@ namespace Shared_Network_Tools
 
         private void button_ifpwhid_Click(object sender, EventArgs e)
         {
-            button_ifpwhid.Text = "隐";
+            if (wifi_password.UseSystemPasswordChar == false)
+            {
+                button_ifpwhid.Text = "隐";
+                wifi_password.UseSystemPasswordChar = true;
+                return;
+            }
+            if (wifi_password.UseSystemPasswordChar == true)
+            {
+                button_ifpwhid.Text = "显";
+                wifi_password.UseSystemPasswordChar = false;
+                return;
+            }
         }
     }
 }
